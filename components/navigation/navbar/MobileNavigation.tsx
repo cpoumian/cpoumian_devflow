@@ -3,8 +3,6 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
@@ -42,6 +40,7 @@ const MobileNavigation = () => {
             Dev<span className="text-primary-500">Flow</span>
           </p>
         </Link>
+
         <div
           className="no-scrollbar flex h-[calc(100vh-80px)]
           flex-col justify-between overflow-y-auto"
@@ -56,8 +55,8 @@ const MobileNavigation = () => {
             <SheetClose asChild>
               <Link href={ROUTES.SIGN_IN}>
                 <Button
-                  className="small-medium btn-secondary
-                  min-h-[42x] w-full rounded-lg px-4 py-3 shadow-none"
+                  className="small-medium btn-secondary min-h-[42x]
+                  w-full rounded-lg px-4 py-3 shadow-none"
                 >
                   <span className="primary-text-gradient">Log In</span>
                 </Button>
@@ -67,8 +66,8 @@ const MobileNavigation = () => {
               <Link href={ROUTES.SIGN_UP}>
                 <Button
                   className="small-medium light-border-2 btn-tertiary
-                  text-dark400_light900 min-h-[41px] w-full rounded-lg border
-                  px-4 py-3 shadow-none"
+                text-dark400_light900 min-h-[41px] w-full rounded-lg border
+                px-4 py-3 shadow-none"
                 >
                   Sign Up
                 </Button>
